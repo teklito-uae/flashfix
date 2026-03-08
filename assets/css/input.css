@@ -113,6 +113,25 @@
         opacity: 0.9;
     }
 
+    /* Mega Menu Desktop Utilities */
+    .desktop-sub-link {
+        @apply flex items-center gap-3 px-4 py-2.5 text-[14px] font-medium transition-all duration-300 rounded-xl;
+        @apply text-gray-600 hover:text-blue-600;
+        @apply dark:text-slate-400 dark:hover:text-white dark:hover:bg-white/5;
+        /* Subtle Gradient Hover */
+        @apply hover:bg-gradient-to-r hover:from-blue-600/[0.04] hover:to-cyan-500/[0.04];
+    }
+
+    .desktop-sub-bullet {
+        @apply w-1.5 h-1.5 rounded-full transition-all duration-300;
+        @apply bg-gray-300 dark:bg-slate-700;
+    }
+
+    .desktop-sub-link:hover .desktop-sub-bullet {
+        @apply bg-blue-500 scale-125;
+        box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+    }
+
     .btn-ghost {
         @apply border border-blue-500 text-blue-600 dark:text-blue-400 rounded-full px-6 py-2.5 font-semibold text-sm transition-all duration-300;
     }

@@ -54,90 +54,63 @@
                             </path>
                         </svg>
                     </a>
-                    <div class="absolute hidden group-hover:block pt-4 left-1/2 -translate-x-1/2">
-                        <div class="glass-card p-6 lg:p-8 w-[1100px] shadow-2xl">
-                            <div class="grid grid-cols-4 gap-8">
+                    <div class="absolute hidden group-hover:block pt-5 left-1/2 -translate-x-1/2">
+                        <div
+                            class="bg-white dark:bg-[#131B26]/98 backdrop-blur-3xl p-8 lg:p-10 w-[1100px] rounded-[2.5rem] border border-gray-200 dark:border-white/10 shadow-2xl dark:shadow-[0_25px_80px_rgba(0,0,0,0.6)]">
+                            <div class="grid grid-cols-4 gap-10">
                                 <!-- Column 1: IT & Workspace -->
                                 <div>
                                     <h4
-                                        class="font-bold text-gray-900 dark:text-white text-[10px] uppercase tracking-widest mb-4 flex items-center gap-2">
-                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                            </path>
-                                        </svg>
+                                        class="font-black text-gray-900 dark:text-white text-[13px] uppercase tracking-[0.15em] mb-6 flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                                            <svg class="w-4.5 h-4.5 text-blue-500" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                                </path>
+                                            </svg>
+                                        </div>
                                         IT & Workspace
                                     </h4>
-                                    <div class="space-y-2.5">
-                                        <a href="/services/it-amc.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                    <div class="space-y-1">
+                                        <a href="/services/it-amc.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             IT AMC Solutions
                                         </a>
-                                        <a href="/services/on-call-support.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/on-call-support.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             On-Call IT Support
                                         </a>
-                                        <a href="/services/remote-it-support.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/remote-it-support.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Remote Assistance
                                         </a>
-                                        <a href="/services/new-office-it-setup.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/new-office-it-setup.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             New Office Setup
                                         </a>
-                                        <a href="/services/it-relocation.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/it-relocation.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             IT Asset Relocation
                                         </a>
-                                        <a href="/services/work-from-home.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/work-from-home.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             WFH Enablement
                                         </a>
-                                        <a href="/services/enterprise-mobility.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/enterprise-mobility.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Enterprise Mobility
                                         </a>
-                                        <a href="/services/user-collaboration-tools.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/user-collaboration-tools.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Collaboration Tools
                                         </a>
-                                        <a href="/services/microsoft-business-plans.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/microsoft-business-plans.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Microsoft 365 Plans
                                         </a>
-                                        <a href="/services/it-consulting.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/it-consulting.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             IT Consulting
                                         </a>
                                     </div>
@@ -146,84 +119,56 @@
                                 <!-- Column 2: Infrastructure & Data -->
                                 <div>
                                     <h4
-                                        class="font-bold text-gray-900 dark:text-white text-[10px] uppercase tracking-widest mb-4 flex items-center gap-2">
-                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
-                                            </path>
-                                        </svg>
+                                        class="font-black text-gray-900 dark:text-white text-[13px] uppercase tracking-[0.15em] mb-6 flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                                            <svg class="w-4.5 h-4.5 text-blue-500" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                                </path>
+                                            </svg>
+                                        </div>
                                         Infrastructure
                                     </h4>
-                                    <div class="space-y-2.5">
-                                        <a href="/services/structured-cabling.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                    <div class="space-y-1">
+                                        <a href="/services/structured-cabling.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Structured Cabling
                                         </a>
-                                        <a href="/services/switching-routing.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/switching-routing.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Switching & Routing
                                         </a>
-                                        <a href="/services/managed-wifi.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/managed-wifi.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Managed WiFi
                                         </a>
-                                        <a href="/services/server-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/server-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Server Solutions
                                         </a>
-                                        <a href="/services/server-storage.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/server-storage.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Hardware Storage
                                         </a>
-                                        <a href="/services/nas-storage.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/nas-storage.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             NAS & Data Storage
                                         </a>
-                                        <a href="/services/synchronized-data-storage.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/synchronized-data-storage.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Data Synchronization
                                         </a>
-                                        <a href="/services/next-gen-firewall.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/next-gen-firewall.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Network Firewall
                                         </a>
-                                        <a href="/services/vpn-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/vpn-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Enterprise VPN
                                         </a>
-                                        <a href="/services/proxy-services.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/proxy-services.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Proxy Server Setup
                                         </a>
                                     </div>
@@ -232,84 +177,56 @@
                                 <!-- Column 3: Cybersecurity & ELV -->
                                 <div>
                                     <h4
-                                        class="font-bold text-gray-900 dark:text-white text-[10px] uppercase tracking-widest mb-4 flex items-center gap-2">
-                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-                                            </path>
-                                        </svg>
+                                        class="font-black text-gray-900 dark:text-white text-[13px] uppercase tracking-[0.15em] mb-6 flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                                            <svg class="w-4.5 h-4.5 text-blue-500" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                                </path>
+                                            </svg>
+                                        </div>
                                         Security & ELV
                                     </h4>
-                                    <div class="space-y-2.5">
-                                        <a href="/services/cyber-security-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                    <div class="space-y-1">
+                                        <a href="/services/cyber-security-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Cyber Security Full
                                         </a>
-                                        <a href="/services/endpoint-security.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/endpoint-security.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Endpoint Protection
                                         </a>
-                                        <a href="/services/email-security.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/email-security.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Email & Anti-Spam
                                         </a>
-                                        <a href="/services/dlp-solution.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/dlp-solution.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Data Loss Prevention
                                         </a>
-                                        <a href="/services/vulnerability-management.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/vulnerability-management.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Vulnerability Audit
                                         </a>
-                                        <a href="/services/cctv-surveillance.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/cctv-surveillance.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             CCTV Surveillance
                                         </a>
-                                        <a href="/services/access-control.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/access-control.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Access Control
                                         </a>
-                                        <a href="/services/biometric-attendance.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/biometric-attendance.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Biometric Time
                                         </a>
-                                        <a href="/services/intercom-systems.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/intercom-systems.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Intercom Systems
                                         </a>
-                                        <a href="/services/ip-phone-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/ip-phone-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             IP Telephony
                                         </a>
                                     </div>
@@ -318,84 +235,56 @@
                                 <!-- Column 4: Cloud & AV -->
                                 <div>
                                     <h4
-                                        class="font-bold text-gray-900 dark:text-white text-[10px] uppercase tracking-widest mb-4 flex items-center gap-2">
-                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
-                                            </path>
-                                        </svg>
+                                        class="font-black text-gray-900 dark:text-white text-[13px] uppercase tracking-[0.15em] mb-6 flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                                            <svg class="w-4.5 h-4.5 text-blue-500" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                                                </path>
+                                            </svg>
+                                        </div>
                                         Cloud & AV
                                     </h4>
-                                    <div class="space-y-2.5">
-                                        <a href="/services/azure-cloud-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                    <div class="space-y-1">
+                                        <a href="/services/azure-cloud-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Azure Cloud Solutions
                                         </a>
-                                        <a href="/services/cloud-migration.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/cloud-migration.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Cloud Migration
                                         </a>
-                                        <a href="/services/backup-as-a-service.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/backup-as-a-service.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Backup (BaaS)
                                         </a>
-                                        <a href="/services/disaster-recovery-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/disaster-recovery-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Disaster Recovery
                                         </a>
-                                        <a href="/services/business-continuity-plan.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/business-continuity-plan.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             B.C.P Planning
                                         </a>
-                                        <a href="/services/video-conferencing.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/video-conferencing.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Video Conferencing
                                         </a>
-                                        <a href="/services/meeting-room-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/meeting-room-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Room Solutions
                                         </a>
-                                        <a href="/services/video-wall.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/video-wall.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Video Wall Setup
                                         </a>
-                                        <a href="/services/digital-signage.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/digital-signage.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Digital Signage
                                         </a>
-                                        <a href="/services/smart-classroom-solutions.php"
-                                            class="group flex items-center gap-2 text-[11px] font-semibold text-gray-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-white transition-colors">
-                                            <div
-                                                class="w-1 h-1 bg-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity">
-                                            </div>
+                                        <a href="/services/smart-classroom-solutions.php" class="desktop-sub-link">
+                                            <div class="desktop-sub-bullet"></div>
                                             Education Tech
                                         </a>
                                     </div>

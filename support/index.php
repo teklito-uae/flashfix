@@ -79,6 +79,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
 
             <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border-100);text-align:center;">
+                <p style="font-size:12px;color:var(--text-soft);margin-bottom:8px;">
+                    <a href="<?php echo url('/help.php'); ?>" style="color:var(--primary-light);font-weight:600;">How does this work? →</a>
+                </p>
                 <p style="font-size:12px;color:var(--text-soft);">
                     Need an admin account? <a href="<?php echo url('/admin/login.php'); ?>" style="color:var(--primary-light);font-weight:600;">Admin Login →</a>
                 </p>

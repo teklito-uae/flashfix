@@ -10,7 +10,7 @@ require_once __DIR__ . '/config.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help & How It Works | <?php echo SITE_NAME; ?></title>
-    <link rel="stylesheet" href="<?php echo url('/assets/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?php echo url('/assets/css/style.css?v=1.1'); ?>">
     <style>
         .help-hero {
             text-align: center;

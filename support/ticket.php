@@ -61,7 +61,7 @@ $replies = $stmt->fetchAll();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo sanitize($ticket['case_id']); ?> | <?php echo SITE_NAME; ?></title>
-    <link rel="stylesheet" href="<?php echo url('/assets/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?php echo url('/assets/css/style.css?v=1.1'); ?>">
 </head>
 <body>
 <div class="page-wrapper">
@@ -210,6 +210,6 @@ $replies = $stmt->fetchAll();
 
 </div>
 
-<script src="<?php echo url('/assets/js/app.js'); ?>"></script>
+<script src="<?php echo url('/assets/js/app.js?v=1.1'); ?>"></script>
 </body>
 </html>

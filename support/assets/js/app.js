@@ -5,20 +5,26 @@
 // ── Theme Toggle ──────────────────────────
 (function() {
     // Apply saved theme immediately (before DOM ready to prevent flash)
-    var saved = localStorage.getItem('support-theme');
-    if (saved === 'light') {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }
+    try {
+        var saved = localStorage.getItem('support-theme');
+        if (saved === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    } catch(e) { console.error("Theme init failed", e); }
 })();
 
 function toggleTheme() {
     var html = document.documentElement;
-    if (html.getAttribute('data-theme') === 'light') {
+    var currentTheme = html.getAttribute('data-theme');
+    
+    if (currentTheme === 'light') {
         html.removeAttribute('data-theme');
         localStorage.setItem('support-theme', 'dark');
+        console.log("Theme switched to: dark");
     } else {
         html.setAttribute('data-theme', 'light');
         localStorage.setItem('support-theme', 'light');
+        console.log("Theme switched to: light");
     }
 }
 

@@ -3,8 +3,8 @@
 -- Database Schema
 -- =========================================
 
-CREATE DATABASE IF NOT EXISTS `flashfix_support` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `flashfix_support`;
+-- NOTE: Database is already created on hosting.
+-- Import this file directly into 'u887613492_ff_support' via phpMyAdmin.
 
 -- -----------------------------------------
 -- Admins

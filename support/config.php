@@ -12,9 +12,9 @@ session_start();
 
 // ── Database ──────────────────────────────────────
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'flashfix_support');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_NAME', 'u887613492_ff_support');
+define('DB_USER', 'u887613492_ff_support');
+define('DB_PASS', 'F$drQSBL8t=');
 define('DB_CHARSET', 'utf8mb4');
 
 // ── Site Settings ─────────────────────────────────

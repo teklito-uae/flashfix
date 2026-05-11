@@ -18,7 +18,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                     <div class="absolute inset-0 transition-opacity duration-1000 opacity-100" data-hero-slide>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10">
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-bl from-[#0052FF]/30 to-transparent z-10"></div>
+                        <div class="absolute inset-0 bg-gradient-to-bl from-[#2563FF]/30 to-transparent z-10"></div>
                         <img src="/assets/images/structured-cabling-hero.png" alt="Data Center"
                             class="w-full h-full object-cover">
                         <div class="absolute inset-0 z-20 flex items-end pb-6 sm:pb-10">
@@ -41,7 +41,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                     <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" data-hero-slide>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10">
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-bl from-[#0052FF]/30 to-transparent z-10"></div>
+                        <div class="absolute inset-0 bg-gradient-to-bl from-[#2563FF]/30 to-transparent z-10"></div>
                         <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1400"
                             alt="Networking" class="w-full h-full object-cover">
                         <div class="absolute inset-0 z-20 flex items-end pb-6 sm:pb-10">
@@ -63,7 +63,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                     <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" data-hero-slide>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10">
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-bl from-[#0052FF]/30 to-transparent z-10"></div>
+                        <div class="absolute inset-0 bg-gradient-to-bl from-[#2563FF]/30 to-transparent z-10"></div>
                         <img src="/assets/images/hikvision-hero-banner.png" alt="Hikvision Security"
                             class="w-full h-full object-cover">
                         <div class="absolute inset-0 z-20 flex items-end pb-6 sm:pb-10">
@@ -359,7 +359,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Bento Card 5: Square Format (Server & IT AMC) -->
             <div
-                class="bg-gradient-to-br from-blue-600 to-[#0B1F3A] rounded-[2rem] border border-blue-500/30 shadow-lg hover:shadow-xl transition-all p-8 relative overflow-hidden group flex flex-col justify-between">
+                class="bg-gradient-to-br from-[#2563FF] to-[#0A1628] rounded-[2rem] border border-blue-500/30 shadow-lg hover:shadow-xl transition-all p-8 relative overflow-hidden group flex flex-col justify-between">
                 <div
                     class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay">
                 </div>
@@ -577,12 +577,12 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Premium Plan -->
             <div
-                class="bg-gradient-to-br from-blue-600 to-[#0B1F3A] rounded-[2rem] p-8 lg:p-10 border border-blue-500/30 shadow-[0_20px_40px_-15px_rgba(1,83,253,0.5)] flex flex-col h-full relative group transform md:-translate-y-6 z-10 overflow-hidden">
+                class="bg-gradient-to-br from-[#2563FF] to-[#0A1628] rounded-[2rem] p-8 lg:p-10 border border-blue-500/30 shadow-[0_20px_40px_-15px_rgba(37,99,255,0.5)] flex flex-col h-full relative group transform md:-translate-y-6 z-10 overflow-hidden">
                 <div
                     class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay">
                 </div>
                 <div
-                    class="absolute top-0 right-0 bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-4 rounded-bl-2xl rounded-tr-[2rem] shadow-sm">
+                    class="absolute top-0 right-0 text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-4 rounded-bl-2xl rounded-tr-[2rem] shadow-sm" style="background: linear-gradient(to right, #0066FF, #00D4FF, #00FF66);">
                     Most Popular
                 </div>
 
@@ -885,8 +885,8 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             .swiper-pagination-bullet-active {
                 width: 32px;
-                background: linear-gradient(to right, #2563EB, #06B6D4) !important;
-                box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+                background: linear-gradient(to right, #2563FF, #00D4FF) !important;
+                box-shadow: 0 4px 12px rgba(37, 99, 255, 0.3);
             }
         </style>
 </section>
@@ -1268,7 +1268,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                     </div>
                     <div class="absolute bottom-5 left-5">
                         <span
-                            class="px-3 py-1 bg-[#1A275D] text-white text-[10px] font-extrabold uppercase tracking-widest rounded-full shadow-sm">IT
+                            class="px-3 py-1 bg-[#0A1628] text-white text-[10px] font-extrabold uppercase tracking-widest rounded-full shadow-sm">IT
                             AMC</span>
                     </div>
                 </div>
@@ -1300,7 +1300,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 </section>
 
 <!-- CTA Banner (Full Width) -->
-<section class="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 relative overflow-hidden">
+<section class="relative overflow-hidden" style="background: linear-gradient(to right, #0066FF, #00D4FF, #00FF66);">
     <!-- Mesh Glows -->
     <div class="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-[80px]"></div>
     <div class="absolute -bottom-12 -left-12 w-64 h-64 bg-cyan-400/10 rounded-full blur-[80px]"></div>

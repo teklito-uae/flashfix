@@ -1,5 +1,5 @@
 <!-- Top Bar -->
-<div class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs">
+<div class="text-white text-xs" style="background: linear-gradient(to right, #0066FF, #00D4FF, #00FF66);">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-9">
         <p class="font-medium hidden sm:block">🏆 #1 Trusted IT Solutions & Hardware Provider in UAE</p>
         <p class="font-medium sm:hidden text-[10px]">🏆 #1 IT Solutions Provider in UAE</p>
@@ -33,8 +33,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-14 sm:h-16">
             <!-- Logo -->
-            <a href="/" class="text-lg sm:text-xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                Flash<span class="text-gradient-accent">Fix</span>
+            <a href="/" class="flex items-center">
+                <img src="/assets/images/logo/flash-fix-logo.webp" alt="Flash Fix Technologies" class="h-8 w-auto">
             </a>
 
             <!-- Desktop Links -->
@@ -365,8 +365,8 @@
             <div class="w-1/2 flex flex-col h-full bg-[#0B141D] min-h-0">
                 <!-- Header -->
                 <div class="px-6 py-6 flex justify-between items-center border-b border-white/5">
-                    <a href="/" class="text-2xl font-black tracking-tighter text-white">
-                        FLASH<span class="text-blue-500">FIX</span>
+                    <a href="/" class="flex items-center">
+                        <img src="/assets/images/logo/flash-fix-logo.webp" alt="Flash Fix Technologies" class="h-7 w-auto brightness-0 invert">
                     </a>
                     <button id="drawer-close" class="p-2 text-white/50 hover:text-white transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

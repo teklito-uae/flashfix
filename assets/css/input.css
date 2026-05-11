@@ -5,17 +5,17 @@
 :root {
     /* Vibrant Light Theme */
     --theme-page: #FFFFFF;
-    --theme-gray-50: #F8FAFC;
+    --theme-gray-50: #EDF0F5;
 
-    --theme-primary: #2563EB;
+    --theme-primary: #2563FF;
     --theme-secondary: #3B82F6;
-    --theme-accent: #06B6D4;
+    --theme-accent: #00D4FF;
 
     --theme-text-main: #0F172A;
     --theme-text-muted: #475569;
     --theme-text-soft: #64748B;
 
-    --theme-border-100: #E2E8F0;
+    --theme-border-100: #DDE1EA;
     --theme-border-200: #CBD5E1;
 
     --theme-base: #FFFFFF;
@@ -24,22 +24,22 @@
 
 .dark {
     /* Vibrant Dark Theme */
-    --theme-page: #0B1120;
-    --theme-gray-50: #0B1120;
+    --theme-page: #0A1628;
+    --theme-gray-50: #0A1628;
 
-    --theme-primary: #3B82F6;
+    --theme-primary: #2563FF;
     --theme-secondary: #60A5FA;
-    --theme-accent: #22D3EE;
+    --theme-accent: #00D4FF;
 
     --theme-text-main: #F8FAFC;
     --theme-text-muted: #94A3B8;
     --theme-text-soft: #64748B;
 
-    --theme-border-100: #1E293B;
-    --theme-border-200: #334155;
+    --theme-border-100: #1A2740;
+    --theme-border-200: #2A3A52;
 
-    --theme-base: #0B1120;
-    --theme-surface: #1E293B;
+    --theme-base: #0A1628;
+    --theme-surface: #111D2E;
     --color-white: #FFFFFF;
 }
 
@@ -98,19 +98,20 @@
 
 @layer utilities {
     .text-gradient-accent {
-        background-image: linear-gradient(to right, var(--theme-primary), var(--theme-accent));
+        background-image: linear-gradient(to right, #2563FF, #00D4FF);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
     .btn-primary {
-        @apply bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full px-6 py-2.5 font-semibold text-sm text-white transition-all duration-300;
+        @apply rounded-full px-6 py-2.5 font-semibold text-sm text-white transition-all duration-300;
+        background: linear-gradient(to right, #0066FF, #00D4FF, #00FF66);
     }
 
     .btn-primary:hover {
-        box-shadow: 0 0 20px var(--theme-primary);
-        opacity: 0.9;
+        box-shadow: 0 0 24px rgba(0, 102, 255, 0.5);
+        opacity: 0.92;
     }
 
     /* Mega Menu Desktop Utilities */
@@ -141,11 +142,11 @@
     }
 
     .bg-hero-gradient {
-        background-image: linear-gradient(135deg, #0153FD, #3A9FFB);
+        background-image: linear-gradient(135deg, #2563FF, #00D4FF);
     }
 
     :is(.dark .bg-hero-gradient) {
-        background-image: linear-gradient(135deg, #0B1F3A, #0E3AA8);
+        background-image: linear-gradient(135deg, #0A1628, #2563FF);
     }
 
     .card-accent {

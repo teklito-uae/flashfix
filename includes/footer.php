@@ -3,9 +3,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-10 sm:mb-12">
             <!-- Company Info -->
             <div class="sm:col-span-2 lg:col-span-2">
-                <a href="/"
-                    class="text-xl sm:text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight block mb-4">
-                    Flash<span class="text-gradient-accent">Fix</span>
+                <a href="/" class="inline-block mb-4">
+                    <img src="/assets/images/logo/flash-fix-logo.webp" alt="Flash Fix Technologies" class="h-9 w-auto">
                 </a>
                 <p class="text-gray-500 dark:text-slate-400 text-xs sm:text-sm mb-6 max-w-sm leading-relaxed">
                     Flash Fix Technologies is a leading IT solutions provider in Dubai, delivering enterprise-grade

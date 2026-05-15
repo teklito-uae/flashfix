@@ -7,262 +7,337 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 <?php include 'includes/navbar.php'; ?>
 
 <!-- Hero Section -->
-<section class="pt-6 sm:pt-8 pb-6 bg-gray-50 dark:bg-base">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row gap-3 h-auto lg:h-[480px]">
+<!-- Hero Section -->
+<section class="relative overflow-hidden"
+    style="background: linear-gradient(135deg, #0B3D91 0%, #2563FF 50%, #1E90FF 100%);">
+    <style>
+        @keyframes blink {
 
-            <!-- Main Column (75%) -->
-            <div class="lg:w-3/4 h-[280px] sm:h-[360px] lg:h-full relative rounded-2xl overflow-hidden">
-                <div id="hero-slider" class="h-full">
-                    <!-- Slide 1 -->
-                    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100" data-hero-slide>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-bl from-[#2563FF]/30 to-transparent z-10"></div>
-                        <img src="/assets/images/structured-cabling-hero.png" alt="Data Center"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 z-20 flex items-end pb-6 sm:pb-10">
-                            <div class="px-5 sm:px-8 max-w-lg">
-                                <span
-                                    class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-600/20 border border-blue-400/30 text-[10px] font-semibold text-blue-300 uppercase tracking-wider mb-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>Enterprise
-                                    IT
-                                </span>
-                                <h1 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight mb-2">Next-Gen
-                                    <span class="text-cyan-400">Infrastructure</span> Solutions
-                                </h1>
-                                <p class="text-xs sm:text-sm text-gray-300 mb-4">Strategic IT management for
-                                    forward-thinking enterprises.</p>
-                                <a href="/contact.php" class="btn-primary text-xs">Get Started</a>
-                            </div>
-                        </div>
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0
+            }
+        }
+
+        @keyframes float-badge {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-8px)
+            }
+        }
+
+        .typewriter-cursor {
+            animation: blink 0.7s infinite;
+        }
+
+        .float-anim {
+            animation: float-badge 3s ease-in-out infinite;
+        }
+
+        .float-anim-delay {
+            animation: float-badge 3s ease-in-out 1.5s infinite;
+        }
+    </style>
+    <!-- Decorative outline text "FLASHFIX" rotated vertically -->
+    <div
+        class="absolute right-4 lg:right-12 top-1/2 -translate-y-1/2 z-[1] pointer-events-none select-none hidden sm:block">
+        <span class="text-[4rem] lg:text-[6rem] font-black tracking-widest uppercase block"
+            style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.15em; -webkit-text-stroke: 2px rgba(255,255,255,0.12); color: transparent;">FLASHFIX</span>
+    </div>
+    <!-- Subtle dot pattern -->
+    <div class="absolute inset-0 opacity-[0.04]"
+        style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="flex flex-col lg:flex-row items-center lg:items-end gap-6 lg:gap-0 py-8 lg:py-0">
+
+            <!-- Left: Text Content -->
+            <div class="w-full lg:w-[55%] text-center lg:text-left lg:py-10 xl:py-14">
+                <!-- Pre-heading Content -->
+                <div
+                    class="inline-flex items-center justify-center lg:justify-start gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-[10px] sm:text-xs font-semibold text-white tracking-wider mb-4 sm:mb-6 backdrop-blur-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                    www.flashfixtechnologies.com
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.15] tracking-tight mb-5">
+                    Your Trusted<br>
+                    <span id="typewriter-text" class="text-cyan-300">IT Partner</span><span
+                        class="typewriter-cursor text-cyan-300">|</span><br>in the UAE.
+                </h1>
+
+                <p class="text-white/80 text-sm sm:text-base leading-relaxed mb-6 max-w-md mx-auto lg:mx-0">
+                    From structured cabling to cloud migrations — we architect, deploy, and maintain enterprise IT
+                    infrastructure with a <strong class="text-white">1-hour response guarantee</strong>.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-6">
+                    <a href="/assets/company_profile/FLASHFIX-TECHNOLOGIES-COMPANY-PROFILE%202026.pdf" target="_blank"
+                        class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-blue-700 bg-white hover:bg-blue-50 transition-all duration-300 hover:scale-105 shadow-lg shadow-black/20">
+                        Download Company Profile
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+                    <a href="tel:+971505050505"
+                        class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white border-2 border-white/30 hover:border-white/60 hover:bg-white/10 transition-all duration-300">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        Call Our Experts
+                    </a>
+                </div>
+
+                <!-- Trust strip with random avatars -->
+                <div class="flex items-center gap-3 justify-center lg:justify-start">
+                    <div class="flex -space-x-2">
+                        <img src="https://i.pravatar.cc/80?img=12"
+                            class="w-8 h-8 rounded-full object-cover border-2 border-blue-500 shadow-lg" alt="Client">
+                        <img src="https://i.pravatar.cc/80?img=32"
+                            class="w-8 h-8 rounded-full object-cover border-2 border-blue-500 shadow-lg" alt="Client">
+                        <img src="https://i.pravatar.cc/80?img=44"
+                            class="w-8 h-8 rounded-full object-cover border-2 border-blue-500 shadow-lg" alt="Client">
+                        <img src="https://i.pravatar.cc/80?img=56"
+                            class="w-8 h-8 rounded-full object-cover border-2 border-blue-500 shadow-lg" alt="Client">
                     </div>
-                    <!-- Slide 2 -->
-                    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" data-hero-slide>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10">
+                    <div class="text-left">
+                        <div class="flex items-center gap-0.5 mb-0.5">
+                            <?php for ($s = 0; $s < 5; $s++)
+                                echo '<svg class="w-3 h-3 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>'; ?>
                         </div>
-                        <div class="absolute inset-0 bg-gradient-to-bl from-[#2563FF]/30 to-transparent z-10"></div>
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1400"
-                            alt="Networking" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 z-20 flex items-end pb-6 sm:pb-10">
-                            <div class="px-5 sm:px-8 max-w-lg">
-                                <span
-                                    class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-600/20 border border-blue-400/30 text-[10px] font-semibold text-blue-300 uppercase tracking-wider mb-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>Connectivity
-                                </span>
-                                <h1 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight mb-2">Seamless
-                                    <span class="text-cyan-400">Networking</span> Solutions
-                                </h1>
-                                <p class="text-xs sm:text-sm text-gray-300 mb-4">High-speed structured cabling and
-                                    enterprise network design.</p>
-                                <a href="/services/switching-routing.php" class="btn-primary text-xs">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" data-hero-slide>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-bl from-[#2563FF]/30 to-transparent z-10"></div>
-                        <img src="/assets/images/hikvision-hero-banner.png" alt="Hikvision Security"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 z-20 flex items-end pb-6 sm:pb-10">
-                            <div class="px-5 sm:px-8 max-w-lg">
-                                <span
-                                    class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-600/20 border border-blue-400/30 text-[10px] font-semibold text-blue-300 uppercase tracking-wider mb-2">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>Security
-                                    Partner
-                                </span>
-                                <h1 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight mb-2">Secure
-                                    <span class="text-cyan-400">Your Property Now</span>
-                                </h1>
-                                <p class="text-xs sm:text-sm text-gray-300 mb-4">Authorized Hikvision partner delivering
-                                    advanced surveillance.</p>
-                                <a href="/services/cctv-surveillance.php" class="btn-primary text-xs">View Systems</a>
-                            </div>
-                        </div>
+                        <p class="text-[10px] text-white/70 font-semibold">Trusted by <span
+                                class="text-white font-bold">150+ businesses</span> across UAE</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Side Column (25%) -->
-            <div class="lg:w-1/4 flex flex-row lg:flex-col gap-3 h-[160px] sm:h-[180px] lg:h-full">
-                <!-- Character Highlight Card -->
-                <div class="flex-[3] sm:flex-1 rounded-2xl overflow-hidden relative group bg-[#00C2FF] cursor-pointer"
-                    onclick="location.href='/services/it-amc.php'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0096C7] via-[#0096C7]/20 to-transparent z-10">
+            <!-- Right: Technician Image -->
+            <div class="w-full lg:w-[45%] flex justify-center lg:justify-end mt-8 lg:mt-0">
+                <div class="relative inline-block">
+                    <img src="/assets/images/services-img/technician-hero-section-new@2x.png"
+                        alt="FlashFix IT Technician"
+                        class="relative z-10 w-[220px] sm:w-[280px] md:w-[320px] lg:w-[380px] xl:w-[420px] max-h-[350px] lg:max-h-[450px] object-contain drop-shadow-2xl filter"
+                        style="filter: drop-shadow(0 20px 30px rgba(0,0,0,0.25));">
+                    <!-- Floating badge: 24/7 -->
+                    <div
+                        class="absolute top-4 -right-2 sm:-right-4 lg:-right-4 xl:right-4 z-20 bg-white/15 backdrop-blur-md border border-white/20 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-xl float-anim">
+                        <div class="text-xl sm:text-2xl font-black text-white leading-none">24/7</div>
+                        <div class="text-[8px] sm:text-[9px] text-cyan-200 uppercase tracking-widest font-bold mt-1">
+                            Support
+                            SLA</div>
                     </div>
-                    <img src="/assets/images/flash-fix-charactor.png"
-                        class="bottom-0 right-[-10%] w-[120%] lg:w-[130%] object-contain group-hover:scale-102 transition-transform duration-500 origin-bottom z-10"
-                        alt="Hardware Repair Expert">
-                    <div class="absolute inset-x-0 bottom-0 z-20 p-3 sm:p-5 flex flex-col justify-end h-full">
-                        <div>
-                            <span
-                                class="inline-block px-2 py-0.5 bg-white/20 backdrop-blur-sm rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider mb-1">Expert
-                                Team</span>
-                            <h3 class="text-white font-extrabold text-sm sm:text-lg leading-tight ">
-                                Hardware Repair<br>& Data Recovery</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Cloud Solutions Card -->
-                <div class="flex-[3] sm:flex-1 rounded-2xl overflow-hidden relative group bg-[#00C2FF] cursor-pointer"
-                    onclick="location.href='/services/azure-cloud-solutions.php'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0096C7] via-[#0096C7]/20 to-transparent z-10">
-                    </div>
-                    <img src="/assets/images/cloud-solutions.png"
-                        class="bottom-0 right-[-10%] w-[120%] lg:w-[130%] object-contain group-hover:scale-102 transition-transform duration-500 origin-bottom z-10"
-                        alt="Cloud Solutions">
-                    <div class="absolute inset-x-0 bottom-0 z-20 p-3 sm:p-5 flex flex-col justify-end h-full">
-                        <div>
-                            <span
-                                class="inline-block px-2 py-0.5 bg-white/20 backdrop-blur-sm rounded text-[8px] sm:text-[10px] font-bold text-white uppercase tracking-wider mb-1">Scale
-                                Smart</span>
-                            <h3 class="text-white font-extrabold text-sm sm:text-lg leading-tight ">
-                                Azure Cloud &<br>Hosting Solutions</h3>
-                        </div>
+                    <!-- Floating badge: Response -->
+                    <div
+                        class="absolute bottom-12 -left-2 sm:-left-4 lg:-left-6 xl:left-0 z-20 bg-white/15 backdrop-blur-md border border-white/20 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-xl float-anim-delay">
+                        <div class="text-xl sm:text-2xl font-black text-white leading-none">&lt;1hr</div>
+                        <div class="text-[8px] sm:text-[9px] text-cyan-200 uppercase tracking-widest font-bold mt-1">
+                            Response Time</div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- Brand Carousel -->
-<section class="py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p
-            class="text-center text-[10px] font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-widest mb-6">
-            Authorized Partner for Leading Brands</p>
-        <div class="relative overflow-hidden">
-            <div
-                class="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-gray-50 dark:from-base to-transparent z-10">
-            </div>
-            <div
-                class="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-gray-50 dark:from-base to-transparent z-10">
-            </div>
-            <!-- Row 1: General Brands -->
-            <div
-                class="flex items-center space-x-14 w-max animate-logo-carousel hover:[animation-play-state:paused] whitespace-nowrap mb-8 mt-4">
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">CISCO</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">HPE</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">DELL</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">LENOVO</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">FORTINET</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">MICROSOFT</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">UBIQUITI</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">SYNOLOGY</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">HIKVISION</span>
-                <!-- Duplicate for infinite scroll -->
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">CISCO</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">HPE</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">DELL</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">LENOVO</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">FORTINET</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">MICROSOFT</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">UBIQUITI</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">SYNOLOGY</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">HIKVISION</span>
-            </div>
+<!-- Typewriter Effect Script -->
+<script>
+    (function () {
+        var words = ['IT Partner', 'Network Expert', 'Cloud Solutions', 'Cyber Security', 'Tech Solutions'];
+        var el = document.getElementById('typewriter-text');
+        if (!el) return;
+        var wordIndex = 0, charIndex = 0, isDeleting = false;
+        function type() {
+            var current = words[wordIndex];
+            if (isDeleting) {
+                el.textContent = current.substring(0, charIndex--);
+                if (charIndex < 0) { isDeleting = false; wordIndex = (wordIndex + 1) % words.length; setTimeout(type, 400); return; }
+                setTimeout(type, 40);
+            } else {
+                el.textContent = current.substring(0, ++charIndex);
+                if (charIndex === current.length) { isDeleting = true; setTimeout(type, 2000); return; }
+                setTimeout(type, 80);
+            }
+        }
+        setTimeout(type, 1500);
+    })();
+</script>
 
-            <!-- Row 2: Networking Brands (Reverse) -->
+<!-- Brand Carousel -->
+<section
+    class="py-10 bg-white dark:bg-[#0A1628] border-y border-gray-100 dark:border-white/5 relative z-20 overflow-hidden">
+    <style>
+        .brand-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 18px 8px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--theme-border-100);
+            white-space: nowrap;
+            transition: all 0.2s ease;
+            cursor: default;
+            background: var(--theme-gray-50);
+            color: var(--theme-text-soft);
+        }
+
+        .brand-pill:hover {
+            transform: translateY(-2px);
+            background: var(--color-blue-50);
+            border-color: var(--color-blue-200);
+            color: var(--theme-primary);
+        }
+
+        .brand-monogram {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        .brand-name {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .dark .brand-pill {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: var(--theme-border-100);
+            color: var(--theme-text-muted);
+        }
+
+        .dark .brand-pill:hover {
+            background: color-mix(in oklab, var(--theme-primary) 10%, transparent);
+            border-color: color-mix(in oklab, var(--theme-primary) 30%, transparent);
+            color: var(--color-blue-300);
+        }
+    </style>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-7">
+        <div class="flex items-center gap-4">
+            <div class="flex-1 h-px" style="background: linear-gradient(to right, transparent, #E2E8F0);"></div>
+            <p
+                class="text-[10px] font-extrabold text-gray-400 dark:text-slate-500 uppercase tracking-[0.2em] flex-shrink-0">
+                Authorized Partner for Leading Brands</p>
+            <div class="flex-1 h-px" style="background: linear-gradient(to left, transparent, #E2E8F0);"></div>
+        </div>
+    </div>
+
+    <div class="relative overflow-hidden mt-8">
+        <div
+            class="absolute left-0 top-0 w-28 h-full bg-gradient-to-r from-white dark:from-[#0A1628] to-transparent z-10 pointer-events-none">
+        </div>
+        <div
+            class="absolute right-0 top-0 w-28 h-full bg-gradient-to-l from-white dark:from-[#0A1628] to-transparent z-10 pointer-events-none">
+        </div>
+
+        <!-- Row 1: General Brands → -->
+        <div class="max-w-7xl mx-auto overflow-hidden relative">
+            <div class="absolute left-0 top-0 w-28 h-full bg-gradient-to-r from-white dark:from-[#0A1628] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 w-28 h-full bg-gradient-to-l from-white dark:from-[#0A1628] to-transparent z-10 pointer-events-none"></div>
+            <div class="flex items-center gap-3 w-max animate-logo-carousel hover:[animation-play-state:paused] mb-3 py-1">
+            <?php
+            $brands_row1 = [
+                ['CISCO', 'C', '#00BCEB', '#E0F7FF'],
+                ['HPE', 'H', '#01A982', '#E0FFF7'],
+                ['DELL', 'D', '#007DB8', '#E0F0FF'],
+                ['LENOVO', 'L', '#E2231A', '#FFE5E5'],
+                ['FORTINET', 'F', '#EE3124', '#FFE5E4'],
+                ['MICROSOFT', 'M', '#00A4EF', '#E0F5FF'],
+                ['UBIQUITI', 'U', '#0559C9', '#E5EEFF'],
+                ['SYNOLOGY', 'S', '#B5A642', '#FFF9E0'],
+                ['HIKVISION', 'H', '#CC0000', '#FFE5E5'],
+                ['SEAGATE', 'SE', '#4CAF50', '#E8F5E9'],
+            ];
+            $all1 = array_merge($brands_row1, $brands_row1);
+            foreach ($all1 as $b) {
+                echo '<span class="brand-pill">';
+                echo '<span class="brand-monogram" style="background:' . $b[3] . ';color:' . $b[2] . ';">' . $b[1] . '</span>';
+                echo '<span class="brand-name">' . $b[0] . '</span>';
+                echo '</span>';
+            }
+            ?>
+        </div>
+        </div>
+
+        <!-- Row 2: Networking Brands ← (Reverse) -->
+        <div class="max-w-7xl mx-auto overflow-hidden relative">
+            <div class="absolute left-0 top-0 w-28 h-full bg-gradient-to-r from-white dark:from-[#0A1628] to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute right-0 top-0 w-28 h-full bg-gradient-to-l from-white dark:from-[#0A1628] to-transparent z-10 pointer-events-none"></div>
             <div
-                class="flex items-center space-x-14 w-max animate-logo-carousel-reverse hover:[animation-play-state:paused] whitespace-nowrap">
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">JUNIPER</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">ARUBA</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">MIKROTIK</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">TP-LINK</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">D-LINK</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">NETGEAR</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">ZYXEL</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">RUIJIE</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">PANDUIT</span>
-                <!-- Duplicate for infinite scroll -->
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">JUNIPER</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">ARUBA</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">MIKROTIK</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">TP-LINK</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">D-LINK</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">NETGEAR</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">ZYXEL</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">RUIJIE</span>
-                <span
-                    class="text-lg sm:text-xl font-semibold text-slate-400 dark:text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors cursor-default">PANDUIT</span>
-            </div>
+            class="flex items-center gap-3 w-max animate-logo-carousel-reverse hover:[animation-play-state:paused] py-1">
+            <?php
+            $brands_row2 = [
+                ['JUNIPER', 'JN', '#84B135', '#F0FADF'],
+                ['ARUBA', 'A', '#FF6D00', '#FFF3E0'],
+                ['MIKROTIK', 'MT', '#D32F2F', '#FFE5E5'],
+                ['TP-LINK', 'TP', '#44B549', '#E8F5E9'],
+                ['D-LINK', 'DL', '#0057A8', '#E5EEFF'],
+                ['NETGEAR', 'NG', '#D32222', '#FFE5E5'],
+                ['ZYXEL', 'ZX', '#0072CE', '#E0EEFF'],
+                ['PANDUIT', 'P', '#E31837', '#FFE5E5'],
+                ['RUIJIE', 'RJ', '#FF5722', '#FFF0EB'],
+                ['WATCHGUARD', 'WG', '#CC0000', '#FFE5E5'],
+            ];
+            $all2 = array_merge($brands_row2, $brands_row2);
+            foreach ($all2 as $b) {
+                echo '<span class="brand-pill">';
+                echo '<span class="brand-monogram" style="background:' . $b[3] . ';color:' . $b[2] . ';">' . $b[1] . '</span>';
+                echo '<span class="brand-name">' . $b[0] . '</span>';
+                echo '</span>';
+            }
+            ?>
+        </div>
         </div>
     </div>
 </section>
 
 <!-- Services Bento Grid -->
+
 <section class="py-16 md:py-24 bg-gray-50 dark:bg-base dot-pattern relative overflow-hidden">
-    <div class="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-white dark:from-surface to-transparent z-10"></div>
+    <div class="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-gray-50 dark:from-base to-transparent z-10"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-16">
-            <span class="text-[10px] tracking-widest uppercase font-bold text-blue-600 mb-3 block">What We
-                Deliver</span>
-            <h2
-                class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
-                Enterprise IT Solutions</h2>
-            <p class="text-base sm:text-lg text-gray-500 dark:text-slate-400 max-w-2xl mx-auto">Comprehensive, robust,
-                and scalable technology services to empower your business operations.</p>
+        <div class="text-left mb-10 md:mb-14 max-w-2xl">
+            <span class="text-xs tracking-[0.2em] uppercase font-bold text-blue-600 dark:text-cyan-400 mb-3 block">What
+                We Deliver</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">Enterprise IT
+                Solutions</h2>
+            <p class="text-sm md:text-base text-gray-500 dark:text-slate-400">Comprehensive, robust, and scalable
+                technology services to empower your business operations.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 auto-rows-[minmax(280px,auto)]">
 
             <!-- Bento Card 1: Wide (Cyber Security) -->
             <div
-                class="lg:col-span-2 bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-md transition-all p-8 relative overflow-hidden group flex flex-col justify-between">
+                class="lg:col-span-2 bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:border-blue-500/30 dark:hover:border-cyan-500/30 hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group flex flex-col justify-between">
+                <!-- Abstract Background Glow -->
                 <div
-                    class="absolute -top-24 -right-24 w-64 h-64 bg-blue-100 dark:bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-200 dark:group-hover:bg-blue-500/20 transition-colors">
-                </div>
-
-                <!-- Character Embedded -->
-                <div
-                    class="absolute bottom-0 right-[-10px] sm:right-[10px] w-[150px] md:w-[220px] pointer-events-none z-0 group-hover:scale-105 transition-transform duration-500 origin-bottom">
-                    <img src="/assets/images/cloud-solutions.png" alt="FlashFix Expert"
-                        class="w-full h-auto object-contain">
+                    class="absolute -top-32 -right-32 w-[30rem] h-[30rem] bg-blue-100 dark:bg-blue-500/10 rounded-full blur-[80px] group-hover:bg-blue-200 dark:group-hover:bg-cyan-500/10 transition-colors duration-700 pointer-events-none">
                 </div>
 
                 <div class="relative z-10">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 text-white flex items-center justify-center mb-6 shadow-lg shadow-blue-600/30">
+                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 text-white flex items-center justify-center mb-8 shadow-lg shadow-blue-600/30 group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-500">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
@@ -270,25 +345,36 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                         </svg>
                     </div>
                 </div>
-                <div class="relative z-10 md:w-2/3 lg:w-3/4">
-                    <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 dark:text-white mb-3 tracking-snug">
+
+                <div class="relative z-10 max-w-2xl">
+                    <h3
+                        class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
                         Cyber Security & Protection</h3>
-                    <p class="text-sm text-gray-500 dark:text-slate-400 mb-6 leading-relaxed">Advanced next-generation
-                        firewalls, endpoint protection, complete vulnerability management, and threat intelligence to
-                        secure your digital assets.</p>
+                    <p class="text-base text-gray-500 dark:text-slate-400 mb-8 leading-relaxed">Advanced next-generation
+                        firewalls, endpoint protection, complete vulnerability management, and proactive threat
+                        intelligence to secure your business network against evolving digital risks.</p>
                     <a href="/services/cyber-security-solutions.php"
-                        class="inline-flex items-center text-blue-600 dark:text-blue-400 text-sm font-bold hover:text-blue-800 dark:hover:text-cyan-400 transition-colors">Secure
-                        Your Network <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="inline-flex items-center text-blue-600 dark:text-cyan-400 text-sm font-bold group/link hover:text-blue-800 dark:hover:text-cyan-300 transition-colors">
+                        Secure Your Infrastructure
+                        <svg class="w-4 h-4 ml-1.5 group-hover/link:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg></a>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
             <!-- Bento Card 2: Square (Networking) -->
             <div
-                class="bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-md transition-all p-8 relative overflow-hidden group flex flex-col justify-between">
-                <div>
+                class="bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:border-blue-500/30 dark:hover:border-cyan-500/30 hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group flex flex-col justify-between">
+                <div class="absolute inset-0 pointer-events-none">
+                    <img src="/assets/images/networking.png" alt=""
+                        class="w-full h-full object-cover object-center opacity-[0.05] dark:opacity-[0.08] group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/80 dark:to-surface/80">
+                    </div>
+                </div>
+                <div class="relative z-10">
                     <div
                         class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -302,7 +388,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                         structured cabling.</p>
                 </div>
                 <a href="/services/switching-routing.php"
-                    class="inline-flex items-center text-blue-600 dark:text-blue-400 text-xs font-bold hover:text-blue-800 dark:hover:text-cyan-400 transition-colors">Learn
+                    class="relative z-10 inline-flex items-center text-blue-600 dark:text-blue-400 text-xs font-bold hover:text-blue-800 dark:hover:text-cyan-400 transition-colors">Learn
                     More <svg class="w-3 h-3 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -311,7 +397,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Bento Card 3: Square (Cloud) -->
             <div
-                class="bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-md transition-all p-8 relative overflow-hidden group flex flex-col justify-between">
+                class="bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:border-blue-500/30 dark:hover:border-cyan-500/30 hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group flex flex-col justify-between">
                 <div>
                     <div
                         class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -335,7 +421,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Bento Card 4: Standard (CCTV) -->
             <div
-                class="bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-md transition-all p-8 relative overflow-hidden group flex flex-col justify-between">
+                class="bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl hover:border-blue-500/30 dark:hover:border-cyan-500/30 hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group flex flex-col justify-between">
                 <div>
                     <div
                         class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -359,10 +445,9 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Bento Card 5: Square Format (Server & IT AMC) -->
             <div
-                class="bg-gradient-to-br from-[#2563FF] to-[#0A1628] rounded-[2rem] border border-blue-500/30 shadow-lg hover:shadow-xl transition-all p-8 relative overflow-hidden group flex flex-col justify-between">
-                <div
-                    class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay">
-                </div>
+                class="bg-gradient-to-br from-blue-600 to-blue-900 rounded-3xl border border-blue-500/30 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group flex flex-col justify-between">
+                <!-- Native dot pattern instead of external CDN -->
+                <div class="absolute inset-0 dot-pattern opacity-20 mix-blend-overlay pointer-events-none"></div>
                 <div class="relative z-10">
                     <div
                         class="w-12 h-12 rounded-xl bg-white/10 text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -372,8 +457,8 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-extrabold text-white mb-2">Server & IT AMC</h3>
-                    <p class="text-sm text-blue-100 mb-6">24/7 dedicated IT support, server maintenance, and AMC.</p>
+                    <h3 class="text-lg font-extrabold text-white mb-2">Server &amp; IT AMC</h3>
+                    <p class="text-sm text-blue-100/80 mb-6">24/7 dedicated IT support, server maintenance, and AMC.</p>
                 </div>
                 <a href="/services/it-amc.php"
                     class="relative z-10 inline-flex items-center text-white text-xs font-bold hover:text-cyan-400 transition-colors">Get
@@ -401,6 +486,43 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 </section>
 
 <!-- Our Delivery Methodology -->
+<section class="py-12 lg:py-16 bg-white dark:bg-[#0A1628] border-b border-gray-100 dark:border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-left mb-10 md:mb-14 max-w-2xl">
+            <span
+                class="text-[10px] tracking-[0.2em] uppercase font-extrabold text-blue-600 dark:text-blue-400 mb-3 block">Field
+                Expertise</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">Precision in
+                Every Installation</h2>
+            <p class="text-sm md:text-base text-gray-500 dark:text-slate-400">From complex server racks to extensive
+                structured cabling, our certified engineers deliver immaculate deployments on-site.</p>
+        </div>
+
+        <div class="flex flex-row w-full gap-2 sm:gap-4 md:gap-5">
+            <!-- Image 1 -->
+            <div
+                class="flex-1 rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden relative group h-[150px] sm:h-[250px] md:h-[300px] lg:h-[400px]">
+                <img src="/assets/images/services-img/technical-work-1.webp" alt="Structured Cabling"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+
+            <!-- Image 2 -->
+            <div
+                class="flex-1 rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden relative group h-[150px] sm:h-[250px] md:h-[300px] lg:h-[400px]">
+                <img src="/assets/images/services-img/technical-work-2.webp" alt="Server Setup"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+
+            <!-- Image 3 -->
+            <div
+                class="flex-1 rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden relative group h-[150px] sm:h-[250px] md:h-[300px] lg:h-[400px]">
+                <img src="/assets/images/services-img/technical-work-3.webp" alt="Network Testing"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="py-12 md:py-20 bg-white dark:bg-surface relative overflow-hidden">
     <!-- Grid Pattern Background -->
     <div
@@ -415,21 +537,20 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-left mb-10 md:mb-12 max-w-2xl">
-            <span class="text-[10px] tracking-widest uppercase font-bold text-blue-600 mb-3 block">Our
+        <div class="text-left mb-10 md:mb-14 max-w-2xl">
+            <span class="text-xs tracking-[0.2em] uppercase font-bold text-blue-600 dark:text-cyan-400 mb-3 block">Our
                 Methodology</span>
-            <h2
-                class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-3 tracking-tight">
-                How We Deliver Excellence</h2>
-            <p class="text-sm text-gray-500 dark:text-slate-400">A proven framework for
-                implementing IT solutions that drive growth and maximize ROI.</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">How We Deliver
+                Excellence</h2>
+            <p class="text-sm md:text-base text-gray-500 dark:text-slate-400">A proven framework for implementing IT
+                solutions that drive growth and maximize ROI.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative z-10 pb-6 lg:pb-16">
 
             <!-- Step 1 -->
             <div
-                class="bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-8 relative overflow-hidden group">
+                class="bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group">
                 <!-- Hover Glow -->
                 <div
                     class="absolute -top-24 -right-24 w-48 h-48 bg-blue-100 dark:bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-200 dark:group-hover:bg-blue-500/20 transition-colors pointer-events-none">
@@ -448,7 +569,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Step 2 -->
             <div
-                class="bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-8 relative overflow-hidden group lg:translate-y-6">
+                class="bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group lg:translate-y-6">
                 <!-- Hover Glow -->
                 <div
                     class="absolute -top-24 -right-24 w-48 h-48 bg-blue-100 dark:bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-200 dark:group-hover:bg-blue-500/20 transition-colors pointer-events-none">
@@ -467,7 +588,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Step 3 -->
             <div
-                class="bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-8 relative overflow-hidden group lg:translate-y-12">
+                class="bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group lg:translate-y-12">
                 <!-- Hover Glow -->
                 <div
                     class="absolute -top-24 -right-24 w-48 h-48 bg-blue-100 dark:bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-200 dark:group-hover:bg-blue-500/20 transition-colors pointer-events-none">
@@ -486,7 +607,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Step 4 -->
             <div
-                class="bg-white dark:bg-surface rounded-[2rem] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-8 relative overflow-hidden group lg:translate-y-18">
+                class="bg-white dark:bg-surface rounded-3xl border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 p-6 lg:p-8 relative overflow-hidden group lg:translate-y-18">
                 <!-- Hover Glow -->
                 <div
                     class="absolute -top-24 -right-24 w-48 h-48 bg-blue-100 dark:bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-200 dark:group-hover:bg-blue-500/20 transition-colors pointer-events-none">
@@ -510,14 +631,13 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 <!-- Managed IT Plans -->
 <section class="py-12 md:py-20 bg-gray-50 dark:bg-base dot-pattern relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-left mb-10 md:mb-12 max-w-2xl">
-            <span class="text-[10px] tracking-widest uppercase font-bold text-blue-600 mb-3 block">IT Support
-                Packages</span>
-            <h2
-                class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-3 tracking-tight">
-                Managed IT AMC Solutions</h2>
-            <p class="text-sm text-gray-500 dark:text-slate-400">Predictable IT costs
-                with comprehensive SLA-backed support for your entire organization.</p>
+        <div class="text-left mb-10 md:mb-14 max-w-2xl">
+            <span class="text-xs tracking-[0.2em] uppercase font-bold text-blue-600 dark:text-cyan-400 mb-3 block">IT
+                Support Packages</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">Managed IT AMC
+                Solutions</h2>
+            <p class="text-sm md:text-base text-gray-500 dark:text-slate-400">Predictable IT costs with comprehensive
+                SLA-backed support for your entire organization.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-center max-w-6xl mx-auto">
@@ -577,12 +697,12 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 
             <!-- Premium Plan -->
             <div
-                class="bg-gradient-to-br from-[#2563FF] to-[#0A1628] rounded-[2rem] p-8 lg:p-10 border border-blue-500/30 shadow-[0_20px_40px_-15px_rgba(37,99,255,0.5)] flex flex-col h-full relative group transform md:-translate-y-6 z-10 overflow-hidden">
+                class="bg-gradient-to-br from-[#2563FF] to-[#0A1628] rounded-3xl p-6 lg:p-8 border border-blue-500/30 shadow-[0_20px_40px_-15px_rgba(37,99,255,0.5)] flex flex-col h-full relative group transform md:-translate-y-6 z-10 overflow-hidden">
                 <div
                     class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay">
                 </div>
-                <div
-                    class="absolute top-0 right-0 text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-4 rounded-bl-2xl rounded-tr-[2rem] shadow-sm" style="background: linear-gradient(to right, #0066FF, #00D4FF, #00FF66);">
+                <div class="absolute top-0 right-0 text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-4 rounded-bl-2xl rounded-tr-[2rem] shadow-sm"
+                    style="background: linear-gradient(to right, #2563FF, #00D4FF);">
                     Most Popular
                 </div>
 
@@ -766,8 +886,14 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                 <div
                     class="absolute inset-0 bg-gradient-to-tr from-blue-600/15 to-cyan-400/15 rounded-full blur-[80px] -z-10 transform scale-90 translate-x-5 translate-y-5">
                 </div>
-                <img src="/assets/images/strategic-choice.png" alt="FlashFix Professional Team"
-                    class="rounded-[2rem] w-full lg:w-[90%] h-auto lg:ml-auto shadow-xl relative border border-gray-100 dark:border-white/5 object-cover z-10">
+                <div class="relative">
+                    <img src="/assets/images/services-img/flash-fix-office-interior.webp"
+                        alt="FlashFix Technologies Office"
+                        class="rounded-[2rem] w-full lg:w-[90%] h-auto lg:ml-auto shadow-xl relative border border-gray-100 dark:border-white/5 object-cover z-10">
+                    <!-- Outline logo watermark -->
+                    <img src="/assets/images/services-img/flash-fix-outline-logo-bg.webp" alt=""
+                        class="absolute -bottom-6 -right-6 w-32 h-auto opacity-10 dark:opacity-[0.06] pointer-events-none z-20">
+                </div>
 
                 <!-- Floating Metrics Bento Card (Minimalist) -->
                 <div
@@ -841,19 +967,24 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
                     ["Laila Mansour", "COO, Tradewinds Co", "Flash Fix delivers on their promises. Their response time for emergency support is genuinely under 60 minutes."]
                 ];
 
+                $techImages = [
+                    '/assets/images/services-img/technician-holding-hand.webp',
+                    '/assets/images/services-img/technician-with-perimeter.webp',
+                    '/assets/images/services-img/technical-work-1.webp',
+                    '/assets/images/services-img/technical-work-2.webp',
+                    '/assets/images/services-img/technical-work-3.webp',
+                ];
+
                 foreach ($testimonials as $i => $t) {
+                    $img = $techImages[$i % count($techImages)];
                     echo '
                     <div class="swiper-slide h-auto">
                         <div class="bg-white dark:bg-surface rounded-[2rem] p-8 lg:p-10 border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-300 relative group/card overflow-hidden h-full flex flex-col">
-                            <div class="absolute -top-4 -right-4 text-blue-100 dark:text-white/5 opacity-50 group-hover/card:text-blue-200 dark:group-hover/card:text-white/10 transition-colors">
-                                <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 32 32">
-                                    <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H9.2c.4-2.2 2.3-4 4.8-4V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-4.8c.4-2.2 2.3-4 4.8-4V8z"></path>
-                                </svg>
-                            </div>
+                            <img src="/assets/images/services-img/flash-fix-low-opacity-bg-logo.webp" class="absolute -top-2 -right-2 w-28 h-28 object-contain opacity-[0.04] dark:opacity-[0.03] pointer-events-none" alt="">
                             <div class="relative z-10 flex flex-col h-full">
                                 <p class="text-gray-600 dark:text-slate-300 text-sm leading-relaxed mb-8 flex-grow">"' . $t[2] . '"</p>
                                 <div class="flex items-center">
-                                    <img src="https://i.pravatar.cc/150?u=' . $i . '" class="w-12 h-12 rounded-full mr-4 border-2 border-white dark:border-surface shadow-md" alt="' . $t[0] . '">
+                                    <img src="' . $img . '" class="w-12 h-12 rounded-full mr-4 border-2 border-white dark:border-surface shadow-md object-cover" alt="' . $t[0] . '">
                                     <div>
                                         <h4 class="font-extrabold text-sm text-gray-900 dark:text-white leading-tight">' . $t[0] . '</h4>
                                         <p class="text-[10px] text-blue-600 dark:text-cyan-400 font-bold uppercase tracking-wider mt-1">' . $t[1] . '</p>
@@ -1300,7 +1431,7 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 </section>
 
 <!-- CTA Banner (Full Width) -->
-<section class="relative overflow-hidden" style="background: linear-gradient(to right, #0066FF, #00D4FF, #00FF66);">
+<section class="relative overflow-hidden" style="background: linear-gradient(to right, #2563FF, #00D4FF);">
     <!-- Mesh Glows -->
     <div class="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-[80px]"></div>
     <div class="absolute -bottom-12 -left-12 w-64 h-64 bg-cyan-400/10 rounded-full blur-[80px]"></div>
@@ -1401,17 +1532,40 @@ $pageDescription = 'Professional IT infrastructure, networking, and hardware sol
 </section>
 
 <script>
-    // Hero Slider
+    // Hero Slider with dots
     var currentSlide = 0;
     var slides = document.querySelectorAll('[data-hero-slide]');
-    function nextSlide() {
+    var dots = document.querySelectorAll('.hero-dot');
+    var autoplayTimer;
+
+    function updateDots() {
+        dots.forEach(function (dot, i) {
+            if (i === currentSlide) {
+                dot.classList.add('w-6', 'bg-white');
+                dot.classList.remove('w-1.5', 'bg-white/30');
+            } else {
+                dot.classList.remove('w-6', 'bg-white');
+                dot.classList.add('w-1.5', 'bg-white/30');
+            }
+            dot.style.height = '6px';
+        });
+    }
+
+    function goToSlide(index) {
         slides[currentSlide].classList.remove('opacity-100');
         slides[currentSlide].classList.add('opacity-0');
-        currentSlide = (currentSlide + 1) % slides.length;
+        currentSlide = index;
         slides[currentSlide].classList.remove('opacity-0');
         slides[currentSlide].classList.add('opacity-100');
+        updateDots();
+        clearInterval(autoplayTimer);
+        autoplayTimer = setInterval(nextSlide, 5000);
     }
-    setInterval(nextSlide, 5000);
+
+    function nextSlide() {
+        goToSlide((currentSlide + 1) % slides.length);
+    }
+    autoplayTimer = setInterval(nextSlide, 5000);
 
     // FAQ Toggle
     function toggleFaq(button) {
